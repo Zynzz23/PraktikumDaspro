@@ -35,19 +35,21 @@ public class Kafe20 {
 
         switch (ukuranCup) {
             case 'S':
-               break;
+                break;
             case 'M':
                 totalHarga += 0.25 * totalHarga;
                 break;
             case 'L':
                 totalHarga += 0.4 * totalHarga;
                 break;
+            default:
+                System.out.println("Ukuran cup yang dipilih tidak tersedia. Silakan pilih ukuran cup S, M, atau L.");
+                return;
         }
-        double diskon = keanggotaan ? 0.1: 0;
+        double diskon = keanggotaan ? 0.1 : 0;
         double nominalBayar = totalHarga - (diskon * totalHarga);
 
-        System.out.println("Item pembelian: " + jumlah + "" + menu + " dengan ukuran cup  " + ukuranCup); 
+        System.out.println("Item pembelian: " + jumlah + " " + menu + " dengan ukuran cup " + ukuranCup);
         System.out.println("NominalBayar " + nominalBayar);
     }
-    
 }
