@@ -11,8 +11,13 @@ public class PemilihanBilangan20 {
         System.out.println("Masukkan sebuah angka: ");
         int angka = sc.nextInt();
 
-        String hasil = (angka % 2 == 0) ? "genap" : "ganjil";
-
-        System.out.println("Angka " + angka + " termasuk bilangan " + hasil);
+        if (angka % 2 == 0)
+        {
+            System.out.println("Angka " + angka + " termasuk bilangan genap");
+        }
+        else
+        {
+            System.out.println("Angka " + angka + " termasuk bilangan ganjil");
+        }
     }
 }
