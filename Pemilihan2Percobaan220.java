@@ -80,8 +80,18 @@ public class Pemilihan2Percobaan220 {
                 System.out.println("Masukkan pilihan menu dengan benar"); 
                 return; 
             }
+            total_bayar = harga;
+            System.out.println("Total bayar = " + harga);
+
 
         } else {
+            
+        }
+        System.out.println("Apakah anda membayar menggunakan qris: ");
+        String qris = input20.nextLine();
+        if (qris.equalsIgnoreCase("ya")) {
+            total_bayar = total_bayar - 1000;
+            System.out.println("Pembayaran menggunakan qris: " + total_bayar);
         }
         System.out.println("------------------------------");
     }
